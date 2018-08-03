@@ -1,0 +1,11 @@
+version: '2'
+services:
+    vm-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/vm/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=vm
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
